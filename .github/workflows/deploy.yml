@@ -24,7 +24,7 @@ jobs:
       - name: Publish to gh-pages
         run: |
           set -e
-          mkdir /tmp/site && cp -r index.html style.css app.js art.json art /tmp/site/ && cd /tmp/site && touch .nojekyll
+          mkdir /tmp/site && cp -r index.html style.css app.js art.json art robots.txt /tmp/site/ && cd /tmp/site && touch .nojekyll
           git init -q -b gh-pages && git add -A
           git -c user.name="github-actions[bot]" -c user.email="41898333+github-actions[bot]@users.noreply.github.com" commit -q -m "Publish $GITHUB_SHA"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" gh-pages:gh-pages
