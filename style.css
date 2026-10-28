@@ -59,7 +59,7 @@ input[type=text],input[type=email],textarea{width:100%;font:inherit;padding:.7re
 .foot{padding:2rem 1.2rem;text-align:center;color:var(--muted);border-top:2px solid #d8cfc4}
 .sr{position:absolute;left:-9999px}
 [hidden]{display:none!important}
-@media(max-width:899px){.top{position:static;padding:.5rem .8rem;gap:.3rem}.nav{order:3;width:100%;flex-wrap:nowrap;overflow-x:auto}.nav a{padding:0 .6rem;white-space:nowrap}.hero{min-height:auto;padding:1rem 0 7rem}.hero img{max-height:60vh}}
+@media(max-width:899px){.top{position:static;padding:.5rem .8rem;gap:.3rem}.nav{order:3;width:100%;flex-wrap:wrap;overflow:visible;display:grid;grid-template-columns:1fr 1fr;gap:.2rem}.nav a{padding:0 .6rem;white-space:nowrap;justify-content:center;background:#f6eef2}.hero{min-height:auto;padding:1rem 0 7rem}.hero img{max-height:60vh}}
 
 .demo-note{background:#fde7f0;border-left:4px solid #d9558e;padding:.6em .9em;border-radius:8px}
 .how{background:#e6f3ea;border-radius:14px;padding:.8em 1.2em;margin:1em 0}.how h2{margin:.2em 0}.how ol{margin:.3em 0;padding-left:1.2em}
