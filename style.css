@@ -1,5 +1,6 @@
 :root{--ink:#1d1a17;--paper:#fbf6ee;--card:#fff;--accent:#b8336a;--green:#2f6b4f;--muted:#4a443e;font-size:19px}
 html.big{font-size:23px}
+.tsz{display:inline-flex;border:2px solid var(--ink);border-radius:999px;overflow:hidden}.tsz button{all:unset;cursor:pointer;padding:.25rem .7rem;line-height:1.2}.tsz .b{font-size:1.25rem;font-weight:700}.tsz .s{font-size:.75rem}.tsz button[aria-pressed=true]{background:#2e8b57;color:#fff}.tsz button:focus-visible{outline:3px solid #f2b705}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.55}
 h1,h2,h3,.brand,.btn,nav a{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
 a{color:var(--accent)}img{max-width:100%;display:block}
@@ -33,7 +34,7 @@ dl{display:grid;grid-template-columns:auto 1fr;gap:.3rem 1rem}dt{font-weight:700
 .wall button{all:unset;cursor:pointer;display:block;margin-bottom:.6rem;break-inside:avoid;transition:transform .2s}
 .wall button:nth-child(3n){transform:rotate(-2deg)}.wall button:nth-child(3n+1){transform:rotate(1.5deg)}
 .wall button:hover,.wall button:focus-visible{transform:scale(1.04);outline:4px solid #f2b705}
-.wall img{border:6px solid #fff;box-shadow:0 4px 10px #0003}
+.wall img{display:block;width:100%;height:auto!important;max-width:100%;object-fit:contain;aspect-ratio:auto;box-sizing:border-box;border:6px solid #fff;box-shadow:0 4px 10px #0003}
 .fly{position:fixed;inset:0;background:#000c;z-index:20;display:grid;place-items:center;padding:1rem}
 .fly .inner{display:flex;flex-direction:column;align-items:center;gap:1rem;max-width:900px;animation:fly .5s cubic-bezier(.2,1.4,.4,1)}
 @keyframes fly{from{transform:scale(.2) rotate(-12deg);opacity:0}to{transform:none;opacity:1}}
