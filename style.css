@@ -82,3 +82,5 @@ p,li,dd{max-width:68ch}
 .empty{background:var(--card);border:3px dashed #d8cfc4;border-radius:16px;padding:1.5rem;text-align:center}
 @media(max-width:899px){.nav{grid-template-columns:1fr 1fr 1fr}}
 @media(max-width:420px){.nav{grid-template-columns:1fr 1fr}}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
